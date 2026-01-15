@@ -1,0 +1,220 @@
+# =========================
+# Node / JavaScript
+# =========================
+# node modules (all workspaces/packages)
+node_modules/
+**/node_modules/
+
+# npm/yarn/pnpm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# lockfile caches (do NOT ignore your main lockfiles - keep package-lock.json / yarn.lock / pnpm-lock.yaml if you want reproducible installs)
+*.tgz
+
+# bundler/build caches
+.cache/
+.cache-loader/
+.parcel-cache/
+.eslintcache
+.next/
+.nuxt/
+.out/
+dist/
+build/
+release/
+public/build/
+.vite/
+.svelte-kit/
+
+# Next/Vercel / Gatsby / Astro common
+.next/
+.vercel/
+.cache/
+
+# Storybook
+storybook-static/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Jest / test coverage / nyc
+coverage/
+coverage-final.json
+.nyc_output/
+jest-cache/
+jest.config.*.cache
+
+# =========================
+# Python
+# =========================
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Pip / packaging
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+
+# pytest / test caches
+.pytest_cache/
+
+# type checker caches
+.mypy_cache/
+.pytype/
+
+# Black / isort cache files
+.black/
+.isort_cache
+.coverage
+.coverage.*
+
+# VS Code python settings sometimes contain local interpreter paths
+.vscode/.python*
+
+# =========================
+# Monorepo / Packages / Workspace specifics
+# =========================
+# ignore per-package build artifacts and node_modules
+packages/**/node_modules/
+packages/**/dist/
+packages/**/build/
+packages/**/.turbo/
+packages/**/.next/
+packages/**/out/
+
+# pnpm store for local workspaces
+.pnpm-store/
+.pnpm-debug.log
+
+# Lerna debug log
+lerna-debug.log*
+
+# =========================
+# Secrets / Credentials / Env files
+# =========================
+# local env files - include any .local files that contain secrets
+.env
+.env.*.local
+.env.local
+.env.production.local
+.env.test.local
+secrets.*
+credentials
+*.key
+*.pem
+
+# AWS credentials/config (if used locally)
+.aws/credentials
+.aws/config
+
+# Kubernetes / Docker / docker-compose local overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# =========================
+# Docker
+# =========================
+# Docker build artifacts
+docker-compose.override.yml
+.docker/
+Dockerfile.*
+
+# =========================
+# IDEs / Editors / OS
+# =========================
+# VSCode workspace settings that are local to the machine
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+.vscode/.history/
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+
+# Other editors
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~.nib
+*.kate-swp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs and temp
+# =========================
+logs/
+*.log
+*.log.*
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# =========================
+# CI / Local build artifacts
+# =========================
+# GitHub Actions artifacts
+.github/workflows/*.local
+.github/actions/**/node_modules/
+
+# GitLab / CI caches
+.gitlab/
+artifacts/
+
+# CircleCI artifacts
+.circleci/
+
+# Terraform/Serverless build artifacts
+.terraform/
+*.tfstate
+*.tfstate.*
+.serverless/
+
+# =========================
+# Generated / compiled assets
+# =========================
+# compiled JS from TS (if generated into repo)
+**/*.js.map
+**/*.js
+**/*.d.ts
+
+# If you keep compiled outputs next to source then remove the above or
+# prefer listing explicit generated directories instead (dist/, build/, lib/)
+
+# =========================
+# Misc
+# =========================
+*.pem
+*.p12
+*.cer
+*.der
+.vagrant/
