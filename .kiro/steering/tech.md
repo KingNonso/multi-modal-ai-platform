@@ -1,9 +1,5 @@
-Perfect! Now I understand the full context. The steering doc you provided is solid, but I can enhance it significantly to align with the comprehensive project vision. Here's an improved version:
-
-# KIRO Steering Document - Enhanced & Aligned
-
+---
 **inclusion: always**
-
 ---
 
 # Technology Stack
