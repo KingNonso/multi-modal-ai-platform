@@ -10,7 +10,7 @@ The implementation prioritizes the Context Engine first (as it's the heart of th
 
 - [ ] 1. Set up project structure and dependencies
 
-  - Create Django 5.2 project with Python 3.14
+  - Create Django 5.2 project with Python 3.14 using django cookie cutter https://github.com/cookiecutter/cookiecutter-django
   - Set up virtual environment using `uv`
   - Install core dependencies: Django, PostgreSQL driver (psycopg2), Redis client, pytest, pytest-django
   - Configure Django settings for multi-database support (PostgreSQL + Redis)
